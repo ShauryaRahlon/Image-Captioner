@@ -1,0 +1,78 @@
+:root {
+  --dark-bg: #1c1c1c;
+  --dark-card-bg: #292929;
+  --text-color: #f5f5f5;
+  --primary-color: #4caf50;
+  --error-color: #ff6b6b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  opacity: 0.9;
+}
+
+.dropzone {
+  background-color: var(--dark-card-bg);
+  border: 2px dashed var(--text-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.upload-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #45a049;
+}
+
+.caption,
+.error {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.error {
+  color: var(--error-color);
+}
